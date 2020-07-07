@@ -19,5 +19,7 @@
   "bugs": {
     "url": "https://github.com/mirescordeiro/SAP004-md-links/issues"
   },
-  "homepage": "https://github.com/mirescordeiro/SAP004-md-links#readme"
+  "homepage": "https://github.com/mirescordeiro/SAP004-md-links#readme",
+  "dependencies": {
+  }
 }
