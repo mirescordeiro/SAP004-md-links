@@ -1,10 +1,10 @@
 {
-  "name": "md-links",
+  "name": "md-accesslib-links",
   "version": "1.0.0",
-  "description": "API to search links in markdown files",
+  "description": "Library to search links in markdown files plus a list of accessibility curated links in portuguese",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -12,14 +12,20 @@
   },
   "keywords": [
     "markdown",
-    "links"
+    "link",
+    "accessibility"
   ],
   "author": "Tamires Cordeiro <mirescordeiro@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "md-links": "./cli.js"
+  },
   "bugs": {
     "url": "https://github.com/mirescordeiro/SAP004-md-links/issues"
   },
   "homepage": "https://github.com/mirescordeiro/SAP004-md-links#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.1.0"
   }
 }
