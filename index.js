@@ -1,52 +1,29 @@
 const fs = require('fs');
 const path = require('path');
 
-
-
-
-function mdLinks(pathCLI){
+function mdFile(pathCLI){
   if(path.extname(pathCLI) == '.md'){
-    return {
-      readMDFile: ()=>{
-        fs.readFile(path, 'utf-8', (error) => {
-          if(error){
-            console.log(error);
-          } else {
-            console.log('read successfully');
-          }
-        });
-      }
-    }
+    return 'markdown file';
   } else {
-    throw console.error('não é um arquivo md');
+    throw console.error('not a markdown file');
   }
 };
 
-module.exports = mdLinks;
+function readFile(pathCLI){
+  fs.readFile(pathCLI, 'utf-8', (error) => {
+    if(error){
+      console.error('could not read the document');
+    } else {
+      return 'read successfully';
+    }
+  });
+};
 
-// function readMDFile(){
-//   fs.readFile(path, 'utf-8', (error) => {
-//     if(error){
-//       console.log(error);
-//     } else {
-//       console.log('read successfully');
-//     }
-//   });
-// }
+module.exports = {
+  mdFile,
+  readFile
+}
 
-// module.exports = (pathCLI) => {
-//           //readMDFile(path);
-
-  const readMDFile = () => {
-    fs.readFile(path, 'utf-8', (error) => {
-      if(error){
-        console.log(error);
-      } else {
-        console.log('read successfully');
-      }
-    });
-  }
-// };
 
 
 // If you want the root of your module's export to be a function (such as a constructor) or 
