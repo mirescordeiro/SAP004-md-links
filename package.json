@@ -1,4 +1,33 @@
 {
-  "name": "md-links",
-  "version": "0.1.0"
+  "name": "@mirescordeiro/md-links",
+  "version": "1.0.0",
+  "description": "API to search links in markdown files plus a list of accessibility curated links in portuguese",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirescordeiro/SAP004-md-links.git"
+  },
+  "keywords": [
+    "markdown",
+    "link",
+    "accessibility"
+  ],
+  "author": "Tamires Cordeiro <mirescordeiro@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "md-links": "./cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/mirescordeiro/SAP004-md-links/issues"
+  },
+  "homepage": "https://github.com/mirescordeiro/SAP004-md-links#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "jsdom": "^16.3.0",
+    "marked": "^1.1.0"
+  }
 }

@@ -1,10 +1,20 @@
-const mdLinks = require('../');
-
+const mdLinks = require('../index.js');
 
 describe('mdLinks', () => {
 
-  it('should...', () => {
-    console.log('FIX ME!');
-  });
+  // it('should identify a markdown file', () => {
+  //   ;
+  // });
 
+  // it('should read a markdown file', () => {
+  //   ;
+  // });
+
+   // it('should identify links', () => {
+  //   ;
+  // });
+
+   // it('should filter links in an array of objects', () => {
+  //   ;
+  // });
 });
