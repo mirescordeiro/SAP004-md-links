@@ -1,4 +1,4 @@
-# md-accesslib-links
+# md-access-links
 
 ## 1. Sobre a biblioteca
 
@@ -19,7 +19,7 @@ Visando o fácil acesso de suas URLs desenvolvemos a `md-accesslib-links`, uma a
 
 #### Pelo GitHub
 
-Com o comando `npm install <githubname>/<reponame>` você pode instalar diretamente
+Com o comando `npm i -g https://github.com/mirescordeiro/SAP004-md-links` você pode instalar diretamente
 pelo GitHub. Ver [docs oficiais dp `npm install` aqui](https://docs.npmjs.com/cli/install)
 
 ## 3. Exemplos de Uso
