@@ -17,10 +17,11 @@ Visando o fácil acesso de suas URLs desenvolvemos a `md-access-links`, uma apli
 
 ## 2. Instalação
 
-#### Pelo GitHub
+Instale através do seguinte comando em seu terminal:
 
-Com o comando `npm i -g https://github.com/mirescordeiro/SAP004-md-links` você pode instalar diretamente
-pelo GitHub. Ver [docs oficiais dp `npm install` aqui](https://docs.npmjs.com/cli/install)
+```
+npm i -g https://github.com/mirescordeiro/SAP004-md-links
+```
 
 ## 3. Exemplos de Uso
 
@@ -30,7 +31,7 @@ Nossa aplicação pode ser executada da seguinte maneira, através do terminal:
 
 Por exemplo:
 
-```sh
+```
 $ md-links ./some/example.md
 ./some/example.md http://algo.com/2/3/ Link de algo
 ./some/example.md https://outra-coisa-.net/algum-doc.html algum doc
