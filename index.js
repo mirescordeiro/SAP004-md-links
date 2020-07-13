@@ -10,7 +10,7 @@ module.exports = mdLinks;
 function mdLinks(pathCLI){
   return new Promise((resolve, reject) => {
     if(path.extname(pathCLI) == '.md'){
-      resolve(arrayOfLinks);
+      resolve(mdHTML(pathCLI));
     } else {
       reject('not a markdown file');
     }
@@ -20,24 +20,27 @@ function mdLinks(pathCLI){
 const mdHTML = function(pathCLI){
   fs.readFile(pathCLI, 'utf-8', function showContent(error, content){
     if (error) return console.error('could not show content');
-    return marked(content);
+    return arrayOfLinks(marked(content), pathCLI);
   });
 };
 
 const arrayOfLinks = function(mdHTML, pathCLI){
   const { window } = new JSDOM(mdHTML);
-  window.document.querySelectorAll('a').forEach(link => {
-    if(typeof link.href.includes('http://'||'https://')){
-      let path = __filename;
-      let href = link.href;
-      let text = link.textContent;
+  const anchor = window.document.getElementsByTagName('a');
+  const anchorArray = Array.from(anchor);
+  const arrayLinks = anchorArray.map(link => {
+    let path = pathCLI;
+    let href = link.href;
+    let text = link.textContent;
     
-      let link = {
+    if(/https?/.test(link.href)){
+      return {
         path,
         href,
         text
       };
     }
-    return linksArray = [...link];
   });
+  const arrayFilterLinks = arrayLinks.filter(object => object !== undefined);
+  return arrayFilterLinks;
 };
