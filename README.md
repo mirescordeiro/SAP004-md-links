@@ -8,7 +8,7 @@ manipulam texto (GitHub, fórum, blogs e etc) e é muito comum encontrar arquivo
 com este formato em qualquer repositório.
 
 Arquivos `Markdown` normalmente contém inúmeros _links_ externos.
-Visando o fácil acesso de suas URLs desenvolvemos a `md-accesslib-links`, uma aplicação em 
+Visando o fácil acesso de suas URLs desenvolvemos a `md-access-links`, uma aplicação em 
 [Node.js](https://nodejs.org/) que ao ler arquivos `Markdown` retorna: 
 
 * **Rota** do arquivo onde foi encontrado o link;
