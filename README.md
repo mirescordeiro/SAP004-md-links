@@ -1,4 +1,4 @@
-# md-accesslib-links
+# md-access-links
 
 ## 1. Sobre a biblioteca
 
