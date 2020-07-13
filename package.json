@@ -1,7 +1,7 @@
 {
-  "name": "md-accesslib-links",
+  "name": "@mirescordeiro/md-links",
   "version": "1.0.0",
-  "description": "Library to search links in markdown files plus a list of accessibility curated links in portuguese",
+  "description": "API to search links in markdown files plus a list of accessibility curated links in portuguese",
   "main": "index.js",
   "scripts": {
     "test": "jest"
