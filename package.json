@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/mirescordeiro/SAP004-md-links#readme",
   "dependencies": {
-    "marked": "^1.1.0"
+    "marked": "^1.1.0",
+    "jsdom": "^16.3.0"
   },
   "devDependencies": {
     "jest": "^26.1.0",
-    "jsdom": "^16.3.0"
   }
 }
