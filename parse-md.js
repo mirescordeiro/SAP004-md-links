@@ -1,13 +1,11 @@
-
-const marked = require('marked');
-const { JSDOM } = require('jsdom');
+const marked = require("marked");
+const { JSDOM } = require("jsdom");
 
 // const mdHTML = marked(content);
 // const { window } = new JSDOM(mdHTML);
 // const link = window.document.querySelector('a');
 // const linkText = link.textContent;
 // const linkURL = link.href.includes('http://');
-
 
 //************************
 // Web Scraping and Parsing HTML in Node.js with jsdom
